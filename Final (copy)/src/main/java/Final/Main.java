@@ -417,7 +417,7 @@ public class Main {
                 .max(Comparator.comparing(dsLop -> dsLop.getSoSV()));
 
         lopNhieuSinhVienNhat.ifPresent(lopHoc ->{
-            System.out.println("Lop co nhieu sinh vien nhat la " + lopHoc + " - voi so sinh vien la " + lopHoc.getSoSV());
+            System.out.println("Lop co nhieu sinh vien nhat la " + lopHoc.getMaLop() + " - voi so sinh vien la " + lopHoc.getSoSV());
         });
     }
 }
