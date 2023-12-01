@@ -392,4 +392,15 @@ public class Main {
                 .filter(hocPhi -> hocPhi.TongHocPhi() == toltalTienHocPhi.getOrDefault(hocPhi.getMaHocPhi(), 0.0))
                 .forEach(hp -> System.out.println("Sinh vien " + hp.getMSSV() + " - da dong du tien hoc, tien da thanh toan: " + hp.TongHocPhi()));
     }
+    static int Cau13(String maLop){
+        int tong = 0;
+        for (SinhVien sv: dsSinhVien){
+            for (LopHoc lop: sv.getDSLopHoc()){
+                if (lop.getMaLop() == maLop)
+                    tong++;
+            }
+        }
+        System.out.println("Ma lop " + maLop + " - co " + tong + " sinh vien");
+        return tong;
+    }
 }
