@@ -80,7 +80,12 @@ public class Main {
         Cau12();
         System.out.println("--Cau hoi 12--");
 
+        int sosv = Cau13("L001");
+        System.out.println("So sinh vien lop L001: " + sosv);
+        System.out.println("--Cau hoi 13--");
 
+        Cau14();
+        System.out.println("--Cau hoi 14--");
     }
     static void taoDSKhoa(){
         dsKhoa.add(new Khoa("K001", "Cong Nghe Thong Tin"));
