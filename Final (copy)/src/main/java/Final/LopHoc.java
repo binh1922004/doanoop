@@ -9,6 +9,7 @@ public class LopHoc {
     private String MaPhongHoc;
     private double TienLuong;
     private int SoTC;
+    private int SoSV;
 
     public LopHoc(String maLop, String maMon, String maGV, String maPhongHoc, double tienLuong, int soTC) {
         MaLop = maLop;
@@ -17,6 +18,15 @@ public class LopHoc {
         MaPhongHoc = maPhongHoc;
         TienLuong = tienLuong;
         SoTC = soTC;
+        SoSV = 0;
+    }
+
+    public int getSoSV() {
+        return SoSV;
+    }
+
+    public void setSoSV(int soSV) {
+        SoSV = soSV;
     }
 
     public int getSoTC() {
