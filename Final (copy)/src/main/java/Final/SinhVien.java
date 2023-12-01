@@ -15,6 +15,13 @@ public class SinhVien extends ConNguoi {
         DSLopHoc = new ArrayList<>();
     }
 
+    public boolean timLop(String maLop){
+        for (LopHoc lopHoc: DSLopHoc){
+            if (lopHoc.getMaLop() == maLop)
+                return true;
+        }
+        return false;
+    }
     public int getKhoa() {
         return Khoa;
     }

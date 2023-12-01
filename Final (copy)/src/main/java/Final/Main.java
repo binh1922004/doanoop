@@ -73,10 +73,14 @@ public class Main {
 
         Cau10();
         System.out.println("--Cau hoi 10--");
+
         Cau11();
         System.out.println("--Cau hoi 11--");
+
         Cau12();
         System.out.println("--Cau hoi 12--");
+
+
     }
     static void taoDSKhoa(){
         dsKhoa.add(new Khoa("K001", "Cong Nghe Thong Tin"));
