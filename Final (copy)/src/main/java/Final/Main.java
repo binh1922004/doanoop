@@ -403,4 +403,17 @@ public class Main {
         System.out.println("Ma lop " + maLop + " - co " + tong + " sinh vien");
         return tong;
     }
+
+    static void Cau14(){
+        for (LopHoc lopHoc: dsLop){
+            lopHoc.setSoSV(Cau13(lopHoc.getMaLop()));
+        }
+
+        Optional<LopHoc> lopNhieuSinhVienNhat = dsLop.stream()
+                .max(Comparator.comparing(dsLop -> dsLop.getSoSV()));
+
+        lopNhieuSinhVienNhat.ifPresent(lopHoc ->{
+            System.out.println("Lop co nhieu sinh vien nhat la " + lopHoc + " - voi so sinh vien la " + lopHoc.getSoSV());
+        })
+    }
 }
