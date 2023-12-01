@@ -400,7 +400,6 @@ public class Main {
                     tong++;
             }
         }
-        System.out.println("Ma lop " + maLop + " - co " + tong + " sinh vien");
         return tong;
     }
 }
