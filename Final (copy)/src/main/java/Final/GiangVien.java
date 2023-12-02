@@ -3,13 +3,19 @@ package Final;
 import java.util.ArrayList;
 import java.util.List;
 
-public class GiangVien extends ConNguoi{
+public class GiangVien{
+    private String Ma;
+    private String Ten;
+    private int Tuoi;
+    private String GioiTinh;
     private String MaKhoa;
     private Khoa KhoaDay;
-    private List<LopHoc> DSLop;
 
     public GiangVien(String ma, String ten, int tuoi, String gioiTinh, String khoa) {
-        super(ma, ten, tuoi, gioiTinh);
+        Ma = ma;
+        Ten = ten;
+        Tuoi = tuoi;
+        GioiTinh = gioiTinh;
         MaKhoa = khoa;
     }
 
@@ -34,35 +40,36 @@ public class GiangVien extends ConNguoi{
     public void setKhoaDay(Khoa khoaDay) {
         KhoaDay = khoaDay;
     }
+
     public String getMa() {
-        return super.getMa();
+        return Ma;
     }
+
     public void setMa(String ma) {
-        super.setMa(ma);
+        Ma = ma;
     }
+
     public String getTen() {
-        return super.getTen();
+        return Ten;
     }
+
     public void setTen(String ten) {
-        super.setTen(ten);
+        Ten = ten;
     }
+
     public int getTuoi() {
-        return super.getTuoi();
+        return Tuoi;
     }
 
     public void setTuoi(int tuoi) {
-        super.setTuoi(tuoi);
+        Tuoi = tuoi;
     }
 
     public String getGioiTinh() {
-        return super.getGioiTinh();
+        return GioiTinh;
     }
+
     public void setGioiTinh(String gioiTinh) {
-        super.setGioiTinh(gioiTinh);
+        GioiTinh = gioiTinh;
     }
-
-    public void addLop(LopHoc lop){
-        DSLop.add(lop);
-    }
-
 }

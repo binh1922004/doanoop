@@ -3,13 +3,20 @@ package Final;
 import java.util.ArrayList;
 import java.util.List;
 
-public class SinhVien extends ConNguoi {
+public class SinhVien{
+    private String Ma;
+    private String Ten;
+    private int Tuoi;
+    private String GioiTinh;
     private int Khoa;
     private String MaNganh;
     private Nganh nganh;
     private List<LopHoc> DSLopHoc;
     public SinhVien(String ma, String ten, int tuoi, String gioiTinh, int khoa, String maNganh) {
-        super(ma, ten, tuoi, gioiTinh);
+        Ma = ma;
+        Ten = ten;
+        Tuoi = tuoi;
+        GioiTinh = gioiTinh;
         Khoa = khoa;
         MaNganh = maNganh;
         DSLopHoc = new ArrayList<>();
@@ -39,28 +46,39 @@ public class SinhVien extends ConNguoi {
     }
 
     public String getMa() {
-        return super.getMa();
+        return Ma;
     }
+
     public void setMa(String ma) {
-        super.setMa(ma);
+        Ma = ma;
     }
+
     public String getTen() {
-        return super.getTen();
+        return Ten;
     }
+
     public void setTen(String ten) {
-        super.setTen(ten);
+        Ten = ten;
     }
+
     public int getTuoi() {
-        return super.getTuoi();
+        return Tuoi;
     }
+
     public void setTuoi(int tuoi) {
-        super.setTuoi(tuoi);
+        Tuoi = tuoi;
     }
+
     public String getGioiTinh() {
-        return super.getGioiTinh();
+        return GioiTinh;
     }
+
     public void setGioiTinh(String gioiTinh) {
-        super.setGioiTinh(gioiTinh);
+        GioiTinh = gioiTinh;
+    }
+
+    public void setDSLopHoc(List<LopHoc> DSLopHoc) {
+        this.DSLopHoc = DSLopHoc;
     }
 
     public String getMaNganh() {
