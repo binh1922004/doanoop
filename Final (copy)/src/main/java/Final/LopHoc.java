@@ -4,16 +4,18 @@ import java.util.Map;
 
 public class LopHoc {
     private String MaLop;
-    private String MaMon;
+    private String TenMon;
     private String MaGV;
     private String MaPhongHoc;
     private double TienLuong;
     private int SoTC;
     private int SoSV;
 
-    public LopHoc(String maLop, String maMon, String maGV, String maPhongHoc, double tienLuong, int soTC) {
+
+    //Constructor
+    public LopHoc(String maLop, String tenMon, String maGV, String maPhongHoc, double tienLuong, int soTC) {
         MaLop = maLop;
-        MaMon = maMon;
+        TenMon = tenMon;
         MaGV = maGV;
         MaPhongHoc = maPhongHoc;
         TienLuong = tienLuong;
@@ -21,6 +23,8 @@ public class LopHoc {
         SoSV = 0;
     }
 
+
+    //getter and setter
     public int getSoSV() {
         return SoSV;
     }
@@ -53,8 +57,8 @@ public class LopHoc {
         MaLop = maLop;
     }
 
-    public String getMaMon() {
-        return MaMon;
+    public String getTenMon() {
+        return TenMon;
     }
 
     public void setMaMon(String MaMon) {
