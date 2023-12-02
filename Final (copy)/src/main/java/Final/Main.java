@@ -43,6 +43,22 @@ public class Main {
         //Tạo danh sách phiếu thu
         taoDSPhieuThu();
 
+        //List câu hỏi
+//        Câu 1: Liệt kê danh sách ngành khi biết khoa
+//        Câu 2: In thông tin trưởng khoa biết khoa
+//        Câu 3: Cho biết khoa, hỏi có boa nhiêu ngành
+//        Câu 4: Cho biết khoa nào nhiều ngành nhất
+//        Câu 5: Cho biết mỗi phòng học có bao nhiêu lớp
+//        Câu 6: danh sách giảng viên không có lớp dạy
+//        Câu 7: Tổng thu nhập cho mỗi giảng viên
+//        Câu 8: Thu nhập của giảng viên lớn nhất, nhỏ nhất, >= trung bình
+//        Câu 9: phòng học được sử dụng nhiều nhất, và số lần sử dụng
+//        Câu 10: Phòng học không được sử  dụng
+//        Câu 11: Cho biết học phí của học sinh nào cao nhất
+//        Câu 12: Học phí nào đã đóng đủ
+//        Câu 13: Cho mã lớp tìm số sinh viên của lớp đó
+//        Câu 14: Lớp nào có nhiều sinh viên nhất
+
         Cau1("K001");
         System.out.println("--Cau hoi 1--");
 
@@ -355,7 +371,7 @@ public class Main {
         tongThuNhap.entrySet().stream()
                 .filter(entry -> entry.getValue().equals(minThuNhap.orElse(0.0)))
                 .forEach(entry -> System.out.println("Ma giang vien " + entry.getKey() + " co tong thu nhap thap nhat " + entry.getValue()));
-        System.out.println("Nhom tho co thu nhap lon hoac bang trun binh");
+        System.out.println("Nhom tho co thu nhap lon hoac bang trung binh");
         tongThuNhap.entrySet().stream()
                 .filter(entry -> entry.getValue() >= avgThuNhap)
                 .forEach(entry -> {
