@@ -43,21 +43,6 @@ public class Main {
         //Tạo danh sách phiếu thu
         taoDSPhieuThu();
 
-        //List câu hỏi
-//        Câu 1: Liệt kê danh sách ngành khi biết khoa
-//        Câu 2: In thông tin trưởng khoa biết khoa
-//        Câu 3: Cho biết khoa, hỏi có boa nhiêu ngành
-//        Câu 4: Cho biết khoa nào nhiều ngành nhất
-//        Câu 5: Cho biết mỗi phòng học có bao nhiêu lớp
-//        Câu 6: danh sách giảng viên không có lớp dạy
-//        Câu 7: Tổng thu nhập cho mỗi giảng viên
-//        Câu 8: Thu nhập của giảng viên lớn nhất, nhỏ nhất, >= trung bình
-//        Câu 9: phòng học được sử dụng nhiều nhất, và số lần sử dụng
-//        Câu 10: Phòng học không được sử  dụng
-//        Câu 11: Cho biết học phí của học sinh nào cao nhất
-//        Câu 12: Học phí nào đã đóng đủ
-//        Câu 13: Cho mã lớp tìm số sinh viên của lớp đó
-//        Câu 14: Lớp nào có nhiều sinh viên nhất
 
         Cau1("K001");
         System.out.println("--Cau hoi 1--");
@@ -146,22 +131,22 @@ public class Main {
         dsGiangVien.add(new GiangVien("G014", "Nguyen Van R", 35,"Nu",  "K004"));
     }
     static void taoDSLop(){
-        dsLop.add(new LopHoc("L001", "M001", "G003", "P001",100, 3));
-        dsLop.add(new LopHoc("L002", "M002", "G004", "P001",150, 4));
-        dsLop.add(new LopHoc("L003", "M003", "G001", "P001",150, 3));
-        dsLop.add(new LopHoc("L004", "M004", "G012", "P002",100, 2));
-        dsLop.add(new LopHoc("L005", "M005", "G013", "P002",100, 1));
-        dsLop.add(new LopHoc("L006", "M006", "G004", "P003",120, 4));
-        dsLop.add(new LopHoc("L007", "M007", "G005", "P001",120, 4));
-        dsLop.add(new LopHoc("L008", "M008", "G006", "P004",120, 3));
-        dsLop.add(new LopHoc("L009", "M009", "G007", "P006",125, 2));
-        dsLop.add(new LopHoc("L010", "M010", "G009", "P006",125, 3));
-        dsLop.add(new LopHoc("L011", "M011", "G009", "P004",125, 3));
-        dsLop.add(new LopHoc("L012", "M012", "G007", "P002",110, 4));
-        dsLop.add(new LopHoc("L013", "M013", "G010", "P003",110, 3));
-        dsLop.add(new LopHoc("L014", "M014", "G011", "P002",100, 3));
-        dsLop.add(new LopHoc("L015", "M015", "G015", "P004",150, 1));
-        dsLop.add(new LopHoc("L016", "M016", "G014", "P001",150, 2));
+        dsLop.add(new LopHoc("L001", "Toan 2", "G003", "P001",100, 3));
+        dsLop.add(new LopHoc("L002", "Toan 3", "G004", "P001",150, 4));
+        dsLop.add(new LopHoc("L003", "CTDL&GT", "G001", "P001",150, 3));
+        dsLop.add(new LopHoc("L004", "Lap trinh huong doi tuong", "G012", "P002",100, 2));
+        dsLop.add(new LopHoc("L005", "Kinh te hoc", "G013", "P002",100, 1));
+        dsLop.add(new LopHoc("L006", "Lap dat oto", "G004", "P003",120, 4));
+        dsLop.add(new LopHoc("L007", "Nhap mon lap trinh", "G005", "P001",120, 4));
+        dsLop.add(new LopHoc("L008", "GDQP1", "G006", "P004",120, 3));
+        dsLop.add(new LopHoc("L009", "GDQP2", "G007", "P006",125, 2));
+        dsLop.add(new LopHoc("L010", "Thi nghiem vat ly", "G009", "P006",125, 3));
+        dsLop.add(new LopHoc("L011", "Thiet ke ao nu", "G009", "P004",125, 3));
+        dsLop.add(new LopHoc("L012", "Thiet ke may mac", "G007", "P002",110, 4));
+        dsLop.add(new LopHoc("L013", "Tim hieu ve lich su", "G010", "P003",110, 3));
+        dsLop.add(new LopHoc("L014", "Logic hoc", "G011", "P002",100, 3));
+        dsLop.add(new LopHoc("L015", "Co so van hoa", "G015", "P004",150, 1));
+        dsLop.add(new LopHoc("L016", "Toan 1", "G014", "P001",150, 2));
     }
     static void taoDSPhongHoc(){
         dsPhongHoc.add(new PhongHoc("P001"));
