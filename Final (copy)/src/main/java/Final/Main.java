@@ -44,9 +44,6 @@ public class Main {
         taoDSPhieuThu();
 
 
-        Cau1("K001");
-        System.out.println("--Cau hoi 1--");
-
         Cau2("K002");
         System.out.println("--Cau hoi 2--");
 
